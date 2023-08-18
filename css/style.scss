@@ -667,9 +667,6 @@ $dureeIt : 0.5;
                 grid-template-rows: 100%; 
                 gap: 0px 0px; 
 
-                border-top: solid 1px $colorSecondary;
-                border-bottom: solid 1px $colorPrimary;
-
                 box-shadow: 0px 4px 15px 0px #0000001A;
                
                 
@@ -728,9 +725,9 @@ $dureeIt : 0.5;
                     &__valide{
                         order: 3;
                         display: none;
-                        background: linear-gradient(193.33deg, $colorSecondary -11.44%, $colorPrimary 123.93%);
+                        background-color: $colorThird;
                         height: 100%;
-                        min-width: 25px;
+                        min-width: 60px;
 
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
@@ -738,14 +735,14 @@ $dureeIt : 0.5;
                     }
 
                     &__valide::before{
-                        width: 16px;
-                        height: 16px;
+                        width: 20px;
+                        height: 20px;
 
-                        padding-top: 100%;
+                        padding-top: 25px;
 
                         font-family: FontAwesome;
                         display: inline-block;
-                        content: "\2b";
+                        content: "\f058";
                         font: var(--fa-font-solid);
                         color: white;
                     } 

@@ -557,8 +557,6 @@ main {
   grid-template-columns: 100%;
   grid-template-rows: 100%;
   gap: 0px 0px;
-  border-top: solid 1px #FF79DA;
-  border-bottom: solid 1px #9356DC;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .bloc_menu__menu__content__case__in {
@@ -610,19 +608,19 @@ main {
 .bloc_menu__menu__content__case__in__valide {
   order: 3;
   display: none;
-  background: linear-gradient(193.33deg, #FF79DA -11.44%, #9356DC 123.93%);
+  background-color: #99E2D0;
   height: 100%;
-  min-width: 25px;
+  min-width: 60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 .bloc_menu__menu__content__case__in__valide::before {
-  width: 16px;
-  height: 16px;
-  padding-top: 100%;
+  width: 20px;
+  height: 20px;
+  padding-top: 25px;
   font-family: FontAwesome;
   display: inline-block;
-  content: "+";
+  content: "\f058";
   font: var(--fa-font-solid);
   color: white;
 }
