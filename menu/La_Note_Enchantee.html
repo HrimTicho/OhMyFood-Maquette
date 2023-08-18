@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood - La note enchantée</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="head_menu">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="head_menu__logo">
+                <img src="../images/logo/ohmyfood.png" alt="Logo OhMyFood" >
+            </div>
+        </header>
+        <main>
+            <div class="bloc_menu">
+                <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="bloc_menu__img" alt="image plat restaurant">
+                <section class="bloc_menu__menu">
+                    <h1 class="title bloc_menu__menu__title">La note enchantée</h1>
+                    <input type="checkbox" class="bloc_menu__menu__icon" id="heart1">
+                    <label for="heart1" class="bloc_menu__menu__iconLabel"></label>
+                    <form id="commande">
+                        <section class="bloc_menu__menu__entree">
+                            <div class="bloc_menu__menu__partie">
+                                <h4>Entrées</h4>
+                                <div class="border"></div>
+                            </div>
+                            <div class="bloc_menu__menu__content">
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Ravioles de foie gras </h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Accompagnées de leur crème à la truffe
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            25€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="entree01">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="entree01"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Caviar osciètre </h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Sur blini à la farine de blé noir
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            35€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="entree02">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="entree02"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Homard et espuma de potiron</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Marinés aux zestes d'orange
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            20€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="entree03">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="entree03"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Foie gras de canard cuit entier</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Confiture de figue et pain toasté
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            35€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="entree04">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="entree04"></label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="bloc_menu__menu__plat">
+                            <div class="bloc_menu__menu__partie">
+                                <h4>Plats</h4>
+                                <div class="border"></div>
+                            </div>
+                            <div class="bloc_menu__menu__content">
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Noix de coquilles Saint-Jacques</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Sur lit de purée de céleri-rave
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            40€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="plat01">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="plat01"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Langoustine poêlée</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Purée de patate douce
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            35€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="plat02">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="plat02"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Mijoté de queue de bœuf </h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Et riz sauvage aux zestes de citron
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            45€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="plat03">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="plat03"></label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="bloc_menu__menu__dessert">
+                            <div class="bloc_menu__menu__partie">
+                                <h4>Desserts</h4>
+                                <div class="border"></div>
+                            </div>
+                            <div class="bloc_menu__menu__content">
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Macaron noisette et chocolat</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Glace au caramel brun et sel de Guérande
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            18€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="dessert01">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="dessert01"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Baba au rhum revisité</h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Avec son coulis de citron
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            22€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="dessert02">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="dessert02"></label>
+                                </div>
+                                <div class="bloc_menu__menu__content__case" >
+                                    <div class="bloc_menu__menu__content__case__in">
+                                        <div class="bloc_menu__menu__content__case__in__par">
+                                            <h3 class="bloc_menu__menu__content__case__in__title">Tarte au citron meringuée </h3>
+                                            <p class="bloc_menu__menu__content__case__in__text" >
+                                                Déstructurée
+                                            </p>
+                                        </div>
+                                        <p class="bloc_menu__menu__content__case__in__price">
+                                            23€
+                                        </p>
+                                        <input type="checkbox" class="bloc_menu__menu__content__case__in__checkbox" id="dessert03">
+                                        <i class="bloc_menu__menu__content__case__in__valide"></i>
+                                    </div>
+                                    <label for="dessert03"></label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <input type="button"  class="btn btn--classic" value="Commander">
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar_footer footer__menu">
+                <h1 class="logo_title">ohmyfood</h1>
+                <ul>
+                    <li><strong><a href=""><i class="fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</a></strong></li>
+                    <li><strong><a href=""><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</a></strong></li>
+                    <li><a href="" >Mentions légales</a></li>
+                    <li><a href="mailto:email@exemple.com" >Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
