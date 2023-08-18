@@ -474,6 +474,16 @@ $dureeIt : 0.5;
     }
 }
 
+@keyframes validePlat{
+    0%{
+        min-width: 0px;
+    }
+
+    100% {
+        min-width: 70px;
+    }
+}
+
 
 .head_menu{
     display: flex;
@@ -683,7 +693,7 @@ $dureeIt : 0.5;
 
                         overflow: hidden;
 
-                        transition: min-width 100ms ease-in;
+                        transition: min-width 250ms ease-in-out;
 
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
@@ -728,10 +738,6 @@ $dureeIt : 0.5;
 
                     &:hover{
                         cursor: pointer;
-                    }
-
-                    &:hover + .bloc_menu__menu__content__case__in__valide{
-                        width: 70px;
                     }
                 }
 
@@ -802,7 +808,7 @@ $dureeIt : 0.5;
 
 @media (min-width: 767.98px) {
     .bloc_menu__menu__content__case:hover .bloc_menu__menu__content__case__in__valide{
-        width: 70px;
+        min-width: 70px;
     }
 }
 
