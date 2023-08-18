@@ -683,7 +683,7 @@ $dureeIt : 0.5;
 
                         overflow: hidden;
 
-                        transition: width 100ms ease-in;
+                        transition: min-width 100ms ease-in;
 
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
@@ -705,11 +705,11 @@ $dureeIt : 0.5;
                     } 
 
                     &__checkbox:not(:checked) +  &__valide{
-                        width: 0px;
+                        min-width: 0px;
                     }
 
                     &__checkbox:checked +  &__valide{
-                        width: 70px;
+                        min-width: 70px;
                     }
 
                     &__checkbox{

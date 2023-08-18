@@ -577,7 +577,7 @@ main {
   height: 100%;
   width: 0px;
   overflow: hidden;
-  transition: width 100ms ease-in;
+  transition: min-width 100ms ease-in;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -596,10 +596,10 @@ main {
   color: #99E2D0;
 }
 .bloc_menu__menu__content__case__in__checkbox:not(:checked) + .bloc_menu__menu__content__case__in__valide {
-  width: 0px;
+  min-width: 0px;
 }
 .bloc_menu__menu__content__case__in__checkbox:checked + .bloc_menu__menu__content__case__in__valide {
-  width: 70px;
+  min-width: 70px;
 }
 .bloc_menu__menu__content__case__in__checkbox {
   display: none;
