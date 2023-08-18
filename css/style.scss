@@ -353,29 +353,25 @@ main{
             &__img{
                 grid-area: 1 / 1 / 5 / 7;
 
-                img{
-                    width: 100%;
-                    height: 100%;
+                width: 100%;
+                height: 100%;
 
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
 
-                    object-fit: cover;
-                }
+                object-fit: cover;
             }
 
             &__new{
                 grid-area: 2 / 2 / 4 / 6; 
-                p {
-                    max-width: 80px;
-                    max-height: 30px;
-                    background-color: #99E2D0;
-                    margin: 0;
-                    padding: 5px 3px 5px 3px;
-                    font-size: 14px;
-                    color: #008766;
-                    border-radius: 2px;
-                }
+                max-width: 80px;
+                max-height: 30px;
+                background-color: #99E2D0;
+                margin: 0;
+                padding: 5px 3px 5px 3px;
+                font-size: 14px;
+                color: #008766;
+                border-radius: 2px;
                 &--on{
                     display: block;
                 }
@@ -386,42 +382,46 @@ main{
 
             &__title{
                 grid-area: 6 / 1 / 7 / 2; 
-                h3{
-                    font-weight: 700;
-                    font-size: 18px;
-                    margin: 0;
-                    text-align: left;
-                    padding-left: 10px;
-                    color: black;
-                }
+                font-weight: 700;
+                font-size: 18px;
+                margin: 0;
+                text-align: left;
+                padding-left: 10px;
+                color: black;
             }
             
             &__text{
                 grid-area: 8 / 1 / 9 / 2; 
 
-                p{
-                    font-size: 17px;
-                    font-weight: 300;
-                    line-height: 20px;
-                    text-align: left;
-                    margin: 0;
-                    padding-left: 10px;
-                    color: black;
-                }
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 20px;
+                text-align: left;
+                margin: 0;
+                padding-left: 10px;
+                color: black;
             }
 
             &__icon{
                 display: none;
 
-           }
+            }
+
+           &__link{
+                z-index: 0;
+                grid-area: 1 / 1 / 11 / 7;
+
+                width: 100%;
+                height: 100%;
+            }
 
            &__iconLabel{
+                z-index: 1;
                 grid-area: 8 / 4; 
 
                 width: 20px;
                 height: 20px;
                 text-align: left;
-
             }
 
             &__iconLabel:hover{
@@ -458,28 +458,6 @@ main{
 $dureeIt : 0.5;
 
 //animation
-@keyframes valide{
-    0%{
-        width: 0px;
-    }
-
-    100% {
-        width: 70px;
-    }
-}
-
-@keyframes valideOut{
-    0%{
-        width: 70px;
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        width: 0px;
-    }
-}
-
 @keyframes fadeInMenu{
     0%{
         height: 0px;
@@ -698,11 +676,14 @@ $dureeIt : 0.5;
 
                     &__valide{
                         order: 3;
-                        display: none;
+                        display: block;
                         background-color: $colorThird;
                         height: 100%;
-                        width: 70px;
+                        width: 0px;
 
+                        overflow: hidden;
+
+                        transition: width 100ms ease-in;
 
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
@@ -724,22 +705,11 @@ $dureeIt : 0.5;
                     } 
 
                     &__checkbox:not(:checked) +  &__valide{
-                        display: block;
-                        animation: valideOut 100ms ease-in 0s 1 normal forwards;
-
-                        
+                        width: 0px;
                     }
 
                     &__checkbox:checked +  &__valide{
-                        display: block;
-
-                        animation: valide 100ms ease-in 0s 1 normal forwards;
-                        
-                        
-                    }
-
-                    &__checkbox:checked +  &__valide::before{
-                        content: "\f00c";
+                        width: 70px;
                     }
 
                     &__checkbox{
@@ -759,15 +729,18 @@ $dureeIt : 0.5;
                     &:hover{
                         cursor: pointer;
                     }
+
+                    &:hover + .bloc_menu__menu__content__case__in__valide{
+                        width: 70px;
+                    }
                 }
 
             }
 
-            &__case:hover{
+            .bloc_menu__menu__content__case:hover{
                 box-shadow: 0px 4px 15px 0px #00000069;
-
-                cursor: pointer;
             }
+
         }
 
         $z : 1;
@@ -824,6 +797,12 @@ $dureeIt : 0.5;
             margin-top: 25px;
             width: 50%;
         }
+    }
+}
+
+@media (min-width: 767.98px) {
+    .bloc_menu__menu__content__case:hover .bloc_menu__menu__content__case__in__valide{
+        width: 70px;
     }
 }
 
