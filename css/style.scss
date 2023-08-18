@@ -459,50 +459,24 @@ $dureeIt : 0.5;
 
 //animation
 @keyframes valide{
-    0%, 99.99%{
-        position: relative;
-
-        order: 3;
-    }
-
     0%{
-        right: 0%;
+        width: 0px;
     }
 
     100% {
-        right: 100%;
-
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-
-        order: -1;
+        width: 70px;
     }
 }
 
 @keyframes valideOut{
-    0%, 99.99%{
-        position: relative;
-
-        order: -1;
-    }
-
     0%{
-        left: 0%;
+        width: 70px;
+        opacity: 1;
     }
 
     100% {
-        left: 100%;
-
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-
-        order: +2;
+        opacity: 0;
+        width: 0px;
     }
 }
 
@@ -727,7 +701,7 @@ $dureeIt : 0.5;
                         display: none;
                         background-color: $colorThird;
                         height: 100%;
-                        min-width: 60px;
+                        width: 70px;
 
 
                         border-top-right-radius: 15px;
@@ -751,7 +725,7 @@ $dureeIt : 0.5;
 
                     &__checkbox:not(:checked) +  &__valide{
                         display: block;
-                        //animation: valideOut 100ms ease-in 0s 1 normal forwards;
+                        animation: valideOut 100ms ease-in 0s 1 normal forwards;
 
                         
                     }
@@ -759,7 +733,7 @@ $dureeIt : 0.5;
                     &__checkbox:checked +  &__valide{
                         display: block;
 
-                        //animation: valide 100ms ease-in 0s 1 normal forwards;
+                        animation: valide 100ms ease-in 0s 1 normal forwards;
                         
                         
                     }

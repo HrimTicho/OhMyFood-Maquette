@@ -389,37 +389,21 @@ main {
 
 /* PAGE MENU */
 @keyframes valide {
-  0%, 99.99% {
-    position: relative;
-    order: 3;
-  }
   0% {
-    right: 0%;
+    width: 0px;
   }
   100% {
-    right: 100%;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    order: -1;
+    width: 70px;
   }
 }
 @keyframes valideOut {
-  0%, 99.99% {
-    position: relative;
-    order: -1;
-  }
   0% {
-    left: 0%;
+    width: 70px;
+    opacity: 1;
   }
   100% {
-    left: 100%;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    order: 2;
+    opacity: 0;
+    width: 0px;
   }
 }
 @keyframes fadeInMenu {
@@ -610,7 +594,7 @@ main {
   display: none;
   background-color: #99E2D0;
   height: 100%;
-  min-width: 60px;
+  width: 70px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -630,9 +614,11 @@ main {
 }
 .bloc_menu__menu__content__case__in__checkbox:not(:checked) + .bloc_menu__menu__content__case__in__valide {
   display: block;
+  animation: valideOut 100ms ease-in 0s 1 normal forwards;
 }
 .bloc_menu__menu__content__case__in__checkbox:checked + .bloc_menu__menu__content__case__in__valide {
   display: block;
+  animation: valide 100ms ease-in 0s 1 normal forwards;
 }
 .bloc_menu__menu__content__case__in__checkbox:checked + .bloc_menu__menu__content__case__in__valide::before {
   content: "\f00c";
