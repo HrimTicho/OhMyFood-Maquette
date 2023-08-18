@@ -615,22 +615,24 @@ main {
   border-bottom-right-radius: 15px;
 }
 .bloc_menu__menu__content__case__in__valide::before {
-  width: 20px;
-  height: 20px;
-  padding-top: 25px;
+  width: 18px;
+  height: 18px;
+  -webkit-clip-path: ellipse(closest-side farthest-side);
+          clip-path: ellipse(closest-side farthest-side);
+  background-color: white;
   font-family: FontAwesome;
+  margin-top: 25px;
+  padding: 2px;
   display: inline-block;
-  content: "\f058";
+  content: "\f00c";
   font: var(--fa-font-solid);
-  color: white;
+  color: #99E2D0;
 }
 .bloc_menu__menu__content__case__in__checkbox:not(:checked) + .bloc_menu__menu__content__case__in__valide {
   display: block;
-  animation: valideOut 100ms ease-in 0s 1 normal forwards;
 }
 .bloc_menu__menu__content__case__in__checkbox:checked + .bloc_menu__menu__content__case__in__valide {
   display: block;
-  animation: valide 100ms ease-in 0s 1 normal forwards;
 }
 .bloc_menu__menu__content__case__in__checkbox:checked + .bloc_menu__menu__content__case__in__valide::before {
   content: "\f00c";

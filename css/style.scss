@@ -729,27 +729,29 @@ $dureeIt : 0.5;
                         height: 100%;
                         min-width: 60px;
 
+
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
-
                     }
 
                     &__valide::before{
-                        width: 20px;
-                        height: 20px;
+                        width: 18px;
+                        height: 18px;
 
-                        padding-top: 25px;
-
+                        clip-path: ellipse(closest-side farthest-side);
+                        background-color: white;
                         font-family: FontAwesome;
+                        margin-top: 25px;
+                        padding: 2px;
                         display: inline-block;
-                        content: "\f058";
+                        content: "\f00c";
                         font: var(--fa-font-solid);
-                        color: white;
+                        color: $colorThird;
                     } 
 
                     &__checkbox:not(:checked) +  &__valide{
                         display: block;
-                        animation: valideOut 100ms ease-in 0s 1 normal forwards;
+                        //animation: valideOut 100ms ease-in 0s 1 normal forwards;
 
                         
                     }
@@ -757,7 +759,7 @@ $dureeIt : 0.5;
                     &__checkbox:checked +  &__valide{
                         display: block;
 
-                        animation: valide 100ms ease-in 0s 1 normal forwards;
+                        //animation: valide 100ms ease-in 0s 1 normal forwards;
                         
                         
                     }
