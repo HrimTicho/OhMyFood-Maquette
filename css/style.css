@@ -466,7 +466,7 @@ main {
      object-fit: cover;
 }
 .bloc_menu__menu {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
@@ -479,7 +479,7 @@ main {
 .bloc_menu__menu form {
   max-width: 634px;
   margin: auto;
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
 }
 .bloc_menu__menu__partie {
   width: 95%;
